@@ -99,12 +99,6 @@ local highlights = {
   ["@lsp.type.comment"] = {
     link = "@comment"
   },
-  ["@lsp.type.decorator"] = {
-    link = "@attribute"
-  },
-  ["@lsp.type.deriveHelper"] = {
-    link = "@attribute"
-  },
   ["@lsp.type.enum"] = {
     link = "@type"
   },
@@ -117,17 +111,11 @@ local highlights = {
   ["@lsp.type.formatSpecifier"] = {
     link = "@punctuation.special"
   },
-  ["@lsp.type.generic"] = {
-    link = "@variable"
-  },
   ["@lsp.type.interface"] = {
     fg = "#35717b"
   },
   ["@lsp.type.keyword"] = {
     link = "@keyword"
-  },
-  ["@lsp.type.lifetime"] = {
-    link = "@storageclass"
   },
   ["@lsp.type.namespace"] = {
     link = "@namespace"
@@ -147,10 +135,7 @@ local highlights = {
   ["@lsp.type.selfKeyword"] = {
     link = "@variable.builtin"
   },
-  ["@lsp.type.selfTypeKeyword"] = {
-    link = "@variable.builtin"
-  },
-  ["@lsp.type.string"] = {
+  ["@lsp.type.string.rust"] = {
     link = "@string"
   },
   ["@lsp.type.typeAlias"] = {
@@ -176,9 +161,6 @@ local highlights = {
   ["@lsp.typemod.keyword.async"] = {
     link = "@keyword.coroutine"
   },
-  ["@lsp.typemod.keyword.injected"] = {
-    link = "@keyword"
-  },
   ["@lsp.typemod.macro.defaultLibrary"] = {
     link = "@function.builtin"
   },
@@ -191,26 +173,14 @@ local highlights = {
   ["@lsp.typemod.string.injected"] = {
     link = "@string"
   },
-  ["@lsp.typemod.struct.defaultLibrary"] = {
-    link = "@type.builtin"
-  },
   ["@lsp.typemod.type.defaultLibrary"] = {
     fg = "#2496ac"
-  },
-  ["@lsp.typemod.typeAlias.defaultLibrary"] = {
-    fg = "#2496ac"
-  },
-  ["@lsp.typemod.variable.callable"] = {
-    link = "@function"
   },
   ["@lsp.typemod.variable.defaultLibrary"] = {
     link = "@variable.builtin"
   },
   ["@lsp.typemod.variable.injected"] = {
     link = "@variable"
-  },
-  ["@lsp.typemod.variable.static"] = {
-    link = "@constant"
   },
   ["@namespace"] = {
     link = "Include"
@@ -220,9 +190,6 @@ local highlights = {
   },
   ["@parameter"] = {
     fg = "#8c6c3e"
-  },
-  ["@parameter.builtin"] = {
-    fg = "#7b6545"
   },
   ["@property"] = {
     fg = "#387068"
@@ -271,30 +238,6 @@ local highlights = {
   },
   ["@text.reference"] = {
     fg = "#118c74"
-  },
-  ["@text.title.1.markdown"] = {
-    bold = true,
-    fg = "#2e7de9"
-  },
-  ["@text.title.2.markdown"] = {
-    bold = true,
-    fg = "#8c6c3e"
-  },
-  ["@text.title.3.markdown"] = {
-    bold = true,
-    fg = "#587539"
-  },
-  ["@text.title.4.markdown"] = {
-    bold = true,
-    fg = "#118c74"
-  },
-  ["@text.title.5.markdown"] = {
-    bold = true,
-    fg = "#9854f1"
-  },
-  ["@text.title.6.markdown"] = {
-    bold = true,
-    fg = "#7847bd"
   },
   ["@text.todo.checked"] = {
     fg = "#387068"
@@ -862,14 +805,6 @@ local highlights = {
   },
   HopUnmatched = {
     fg = "#8990b3"
-  },
-  IblIndent = {
-    fg = "#a8aecb",
-    nocombine = true
-  },
-  IblScope = {
-    fg = "#7847bd",
-    nocombine = true
   },
   Identifier = {
     fg = "#9854f1",

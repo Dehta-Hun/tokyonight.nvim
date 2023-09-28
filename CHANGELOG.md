@@ -1,34 +1,5 @@
 # Changelog
 
-## [2.3.0](https://github.com/folke/tokyonight.nvim/compare/v2.2.0...v2.3.0) (2023-09-28)
-
-
-### Features
-
-* **indent-blankline:** new hl groups ([9699aa2](https://github.com/folke/tokyonight.nvim/commit/9699aa23c9832d81e4fdd43866d143e89c29349f))
-
-## [2.2.0](https://github.com/folke/tokyonight.nvim/compare/v2.1.0...v2.2.0) (2023-09-25)
-
-
-### Features
-
-* Add Helix extras ([#409](https://github.com/folke/tokyonight.nvim/issues/409)) ([a345a21](https://github.com/folke/tokyonight.nvim/commit/a345a21966ed7c1ff26f247d4b20a4f307bedc79))
-* **lsp, treesitter:** add more highlights ([#415](https://github.com/folke/tokyonight.nvim/issues/415)) ([1ddb45d](https://github.com/folke/tokyonight.nvim/commit/1ddb45d47f96c7e060de8a2eae0902fa70788c55))
-* **markdown:** added different colors for each headline ([#423](https://github.com/folke/tokyonight.nvim/issues/423)) ([ad7e8ff](https://github.com/folke/tokyonight.nvim/commit/ad7e8fff8dce637ec2c5aa984553b3d91dc55b37))
-
-## [2.1.0](https://github.com/folke/tokyonight.nvim/compare/v2.0.0...v2.1.0) (2023-08-29)
-
-
-### Features
-
-* Added rainbow-delimiter highlight groups ([#404](https://github.com/folke/tokyonight.nvim/issues/404)) ([9191b4b](https://github.com/folke/tokyonight.nvim/commit/9191b4b67499b5759f4da84ca92c9481d35e8278))
-* **notify:** added support for NotifyBackground ([99ba6de](https://github.com/folke/tokyonight.nvim/commit/99ba6de2a9c1a1a6e652fa121d01fb63c5ec8125))
-
-
-### Bug Fixes
-
-* **dunst:** make whitespace consistent ([#398](https://github.com/folke/tokyonight.nvim/issues/398)) ([c87654a](https://github.com/folke/tokyonight.nvim/commit/c87654a752477756652912ad3ab9b9b366606209))
-
 ## [2.0.0](https://github.com/folke/tokyonight.nvim/compare/v1.23.0...v2.0.0) (2023-06-21)
 
 

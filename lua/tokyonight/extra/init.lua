@@ -8,7 +8,7 @@ M.extras = {
   fish = {ext = "fish", url = "https://fishshell.com/docs/current/index.html", label = "Fish"},
   fish_themes = {ext = "theme", url = "https://fishshell.com/docs/current/interactive.html#syntax-highlighting", label = "Fish Themes"},
   alacritty = {ext = "yml", url = "https://github.com/alacritty/alacritty", label = "Alacritty"},
-  wezterm = {ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm"},
+  wezterm = {ext = "toml", url = "https://wezfurlong.org/wezterm/config/", label = "WezTerm"},
   tmux = {ext = "tmux", url = "https://github.com/tmux/tmux/wiki", label = "Tmux"},
   xresources = {ext = "Xresources", url = "https://wiki.archlinux.org/title/X_resources", label = "Xresources"},
   xfceterm = {ext = "theme", url = "https://docs.xfce.org/apps/terminal/advanced", label = "Xfce Terminal"},
@@ -24,7 +24,6 @@ M.extras = {
   zathura = {ext = "zathurarc", url = "https://pwmt.org/projects/zathura/", label = "Zathura"},
   dunst = {ext = "dunstrc", url = "https://dunst-project.org/", label = "Dunst"},
   gitui = {ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI"},
-  helix = { ext = "toml", url = "https://helix-editor.com/", label = "Helix"},
 }
 
 local function write(str, fileName)
@@ -67,7 +66,7 @@ end
 
 function M.setup()
   M.docs()
-  local tokyonight = require("tokyonight")
+  local config = require("tokyonight.config")
   vim.o.background = "dark"
 
   -- map of style to style name
@@ -82,9 +81,7 @@ function M.setup()
     package.loaded["tokyonight.extra." .. extra] = nil
     local plugin = require("tokyonight.extra." .. extra)
     for style, style_name in pairs(styles) do
-      tokyonight.setup({ style = style })
-      tokyonight.load({ style = style })
-      vim.cmd.colorscheme('tokyonight-' .. style)
+      config.setup({ style = style })
       local colors = require("tokyonight.colors").setup({ transform = true })
       local fname = extra .. "/tokyonight_" .. style .. "." .. info.ext
       colors["_upstream_url"] = "https://github.com/folke/tokyonight.nvim/raw/main/extras/" .. fname
